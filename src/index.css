@@ -2,4 +2,10 @@
 @theme {
   --color-primary: #615DFA;
   --color-secondary: #23D2E2;
+  --font-poppins: "Poppins", sans-serif;
+}
+@layer utilities{
+  .container{
+    @apply max-w-[1900px] mx-auto
+  }
 }
