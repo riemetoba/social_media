@@ -10,10 +10,10 @@ const Navbar = () => {
         {/* Left side */}
         <div className="flex items-center gap-x-12">
           {/* Logo and Hamburger */}
-          <div className="flex items-center space-x-6 w-60 justify-between">
-            <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-x-6 w-60 justify-between">
+            <div className="flex items-center gap-x-2">
               <Image src={logo} className="h-8 w-auto" />
-              <span className="font-bold tracking-widest text-sm uppercase">
+              <span className="font-bold tracking-widest text-[12px] uppercase">
                 Mernian
               </span>
             </div>
@@ -23,19 +23,19 @@ const Navbar = () => {
           <div className="flex items-center gap-x-9">
             <a
               href="#"
-              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+              className="text-[12px] font-poppins font-bold tracking-wider"
             >
               Careers
             </a>
             <a
               href="#"
-              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+              className="text-[12px] font-poppins font-bold tracking-wider"
             >
               Store
             </a>
             <a
               href="#"
-              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+              className="text-[12px] font-poppins font-bold tracking-wider"
             >
               FAQ
             </a>
