@@ -1,72 +1,87 @@
-import { Search, ShoppingCart, MessageSquare, Bell, Menu, Settings } from "lucide-react";
+import { Search, Menu } from "lucide-react";
+import { FaShoppingCart, FaSms, FaBell, FaTools } from "react-icons/fa";
 import Image from "../Image";
 import logo from "/src/assets/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#635BFF] px-6 py-3 shadow-lg text-white font-poppins">
+    <nav className="bg-primary px-6 py-3 shadow-lg text-white font-poppins">
       <div className="flex items-center justify-between">
-        
-        {/* LEFT SECTION: Logo, Menu, and Links */}
-        <div className="flex items-center space-x-10">
+        {/* Left side */}
+        <div className="flex items-center gap-x-12">
           {/* Logo and Hamburger */}
-          <div className="flex items-center space-x-6 w-[240px] justify-between">
+          <div className="flex items-center space-x-6 w-60 justify-between">
             <div className="flex items-center space-x-2">
               <Image src={logo} className="h-8 w-auto" />
-              <span className="font-bold tracking-widest text-sm uppercase">Mernian</span>
+              <span className="font-bold tracking-widest text-sm uppercase">
+                Mernian
+              </span>
             </div>
-            <Menu className="h-5 w-5 cursor-pointer opacity-80 hover:opacity-100" />
+            <Menu className="h-5 w-5 cursor-pointer opacity-90 hover:opacity-100" />
           </div>
 
-          {/* Nav Links */}
-          <div className="flex items-center space-x-6">
-            <a href="#" className="text-[11px] font-bold uppercase tracking-wider hover:text-cyan-300">Careers</a>
-            <a href="#" className="text-[11px] font-bold uppercase tracking-wider hover:text-cyan-300">Store</a>
-            <a href="#" className="text-[11px] font-bold uppercase tracking-wider hover:text-cyan-300">FAQ</a>
+          <div className="flex items-center gap-x-9">
+            <a
+              href="#"
+              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+            >
+              Careers
+            </a>
+            <a
+              href="#"
+              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+            >
+              Store
+            </a>
+            <a
+              href="#"
+              className="text-[12px] font-poppins font-bold uppercase tracking-wider"
+            >
+              FAQ
+            </a>
             <span className="text-xs font-bold cursor-pointer">...</span>
           </div>
         </div>
 
-        {/* MIDDLE SECTION: Search Bar */}
-        <div className="flex-1 max-w-[450px] mx-10">
-          <div className="flex items-center bg-[#4E4AC8] rounded-md px-4 py-2.5">
+        {/* Middle section */}
+        <div className="flex-1 max-w-112.5 mx-10">
+          <div className="flex items-center bg-[#4E4AC8] rounded-md px-4 py-3.5">
             <input
               type="text"
               placeholder="Search here..."
-              className="flex-1 bg-transparent text-sm text-white placeholder-[#8B88EF] outline-none"
+              className="flex-1 bg-transparent text-sm text-white placeholder-[#6763DF] outline-none"
             />
-            <Search className="h-4 w-4 text-[#8B88EF] cursor-pointer" />
+            <Search className="h-4 w-4 text-[#6763DF] cursor-pointer" />
           </div>
         </div>
 
-        {/* RIGHT SECTION: EXP and Icons */}
-        <div className="flex items-center space-x-6">
-          {/* EXP Progress */}
+        {/* Right side */}
+        <div className="flex items-center gap-x-6">
           <div className="flex flex-col items-end">
-            <div className="flex space-x-2 text-[10px] font-bold uppercase">
-              <span className="opacity-60">Next</span>
-              <span className="text-white">35 EXP</span>
+            <div className="flex items-center gap-x-11 text-[12px] font-poppins text-[#ffffff] uppercase">
+              <span className="">Next</span>
+              <span className="">35 EXP</span>
             </div>
-            <div className="h-1 w-24 bg-black/20 rounded-full mt-1 overflow-hidden">
-              <div className="h-full w-[70%] bg-cyan-400" />
+            <div className="h-1 w-28 bg-black/20 rounded-full mt-1 overflow-hidden">
+              <div className="h-full w-[70%] bg-[#41EFFF]" />
             </div>
           </div>
+          {/* border  */}
+          <div className="h-8 w-0.5 bg-[#7A77FD] mx-2" />
 
-          {/* Vertical Divider */}
-          <div className="h-8 w-[1px] bg-white/10 mx-2" />
-
-          {/* Action Icons */}
-          <div className="flex items-center space-x-5">
-            <ShoppingCart className="h-5 w-5 cursor-pointer opacity-70 hover:opacity-100" />
-            <MessageSquare className="h-5 w-5 cursor-pointer opacity-70 hover:opacity-100" />
+          {/* Action icons */}
+          <div className="flex items-center gap-x-5">
+            <FaShoppingCart className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
+            <FaSms className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
             <div className="relative">
-              <Bell className="h-5 w-5 cursor-pointer opacity-70 hover:opacity-100" />
-              <span className="absolute -top-0.5 -right-0.5 h-2 w-2 bg-cyan-400 rounded-full border-2 border-[#635BFF]" />
+              <FaBell className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
+              <span className="absolute bottom-0 right-0 h-2.5 w-2.5 bg-[#41EFFF] rounded-full border-2 border-[#635BFF]" />
             </div>
-            <Settings className="h-5 w-5 cursor-pointer opacity-70 hover:opacity-100" />
           </div>
+          {/* border  */}
+          <div className="h-8 w-0.5 bg-[#7A77FD] mx-2" />
+          <FaTools className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
         </div>
-
       </div>
     </nav>
   );
