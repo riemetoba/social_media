@@ -3,7 +3,7 @@ import { FaShoppingCart, FaSms, FaBell, FaTools } from "react-icons/fa";
 import Image from "../Image";
 import logo from "/src/assets/logo.png";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav className="bg-primary px-6 py-3 shadow-lg text-white font-poppins">
       <div className="flex items-center justify-between">
@@ -17,7 +17,7 @@ const Navbar = () => {
                 Mernian
               </span>
             </div>
-            <Menu className="h-5 w-5 cursor-pointer opacity-90 hover:opacity-100" />
+            <Menu className="h-5 w-5 cursor-pointer text-white" />
           </div>
 
           <div className="flex items-center gap-x-9">
@@ -87,4 +87,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
