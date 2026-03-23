@@ -7,7 +7,7 @@ const Home = () => {
       {/* Left Sidebar */}
       <aside className="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col">
         {/* Sidebar Header/Profile */}
-        <div className="h-32 bg-indigo-700 relative"></div>
+        <div className="h-32 bg-[#4E4AC8] relative"></div>
         <div className="text-center px-4 pb-6 border-b border-gray-100 relative">
           <div className="w-20 h-20 bg-indigo-500 rounded-full border-4 border-white absolute -top-10 left-1/2 transform -translate-x-1/2"></div>
           <div className="pt-12">
@@ -60,7 +60,7 @@ const Home = () => {
         {/* Top Header Section */}
         <div className="bg-white rounded-2xl shadow-sm mb-6 pb-6 overflow-hidden">
           {/* Cover Photo */}
-          <div className="h-64 bg-indigo-700 w-full relative"></div>
+          <div className="h-64 bg-[#4E4AC8] w-full relative"></div>
           
           {/* Profile Bar */}
           <div className="relative px-8 flex justify-between items-center mt-4">
