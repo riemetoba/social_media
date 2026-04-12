@@ -43,7 +43,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Middle section */}
+        {/* Middle section start */}
         <div className="flex-1 max-w-112.5 mx-10">
           <div className="flex items-center bg-[#4E4AC8] rounded-md px-4 py-3.5">
             <input
