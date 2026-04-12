@@ -69,7 +69,7 @@ const Header = () => {
           {/* border  */}
           <div className="h-8 w-0.5 bg-[#7A77FD] mx-2" />
 
-          {/* Action icons */}
+          {/* Action icons strat */}
           <div className="flex items-center gap-x-5">
             <FaShoppingCart className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
             <FaSms className="h-5 w-5 cursor-pointer text-[#7A77FD]" />
