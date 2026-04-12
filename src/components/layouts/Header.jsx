@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav className="bg-primary px-6 py-3 shadow-lg text-white font-poppins">
       <div className="flex items-center justify-between">
-        {/* Left side */}
+        {/* Left side start */}
         <div className="flex items-center gap-x-12">
           {/* Logo and Hamburger */}
           <div className="flex items-center gap-x-6 w-60 justify-between">
