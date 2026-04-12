@@ -55,7 +55,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right side */}
+        {/* Right side start */}
         <div className="flex items-center gap-x-6">
           <div className="flex flex-col items-end">
             <div className="flex items-center gap-x-11 text-[12px] font-poppins text-[#ffffff] uppercase">
